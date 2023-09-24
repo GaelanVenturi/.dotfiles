@@ -11,6 +11,6 @@ PS1='[\u@\h \W]\$ '
 # aliases
 
 alias ls = 'ls -alr'
-alia vim = 'nvim'
+alias vim = 'nvim'
 
 eval "$(starship init bash)"
