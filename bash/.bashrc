@@ -8,4 +8,9 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+# aliases
+
+alias ls = 'ls -alr'
+alia vim = 'nvim'
+
 eval "$(starship init bash)"
