@@ -30,4 +30,5 @@ stow git
 stow nvim
 stow bash
 stow zathura
-stow kitty
+stow wezterm
+# stow kitty
