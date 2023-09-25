@@ -9,3 +9,6 @@
 	email = gaelanv@pm.me
 [init]
 	defaultBranch = main
+[alias]
+  # From https://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one
+  cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
