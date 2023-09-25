@@ -18,7 +18,7 @@ rm -rf paru
 
 # Instal compilers
 
-paru -S gcc
+paru -S gcc nodejs npm
 
 # Install starship
 
