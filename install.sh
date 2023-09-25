@@ -27,11 +27,16 @@ paru -S starship
 # Install fish shell (better than bash and zsh)
 paru -S fish
 
+# Oh-My-Fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
 # stow packages
 
 stow git
 stow nvim
+stow fish
 stow bash
 stow zathura
 stow wezterm
+
 # stow kitty
