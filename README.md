@@ -6,3 +6,7 @@ These are all of my dotfiles that I use in daily work on Archlinux, either with 
 
 I've used [Lazynvim](https://www.lazyvim.org/) as my starter for my Neovim configuration. It provides a significant amount of usability out of the box, but still requires some tinkering out of the box to make it usable for me. 
 
+## How I manage my dotfiles 
+
+I use [stow](https://www.gnu.org/software/stow/) to manage my dotfiles. This provides the greatest flexibility for my workflow since I use Arch Linux on both WSL and bare metal. If you would also like to use stow to manage your dotfiles, feel free to look at Jake Wiesler's post [here](https://www.jakewiesler.com/blog/managing-dotfiles) and his corresponding [youtube video](https://www.youtube.com/watch?v=FHuwzbpTTo0). Either way, the way my dotfiles are organized is for compatibility and use of stow. 
+
