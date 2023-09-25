@@ -24,6 +24,9 @@ paru -S gcc nodejs npm
 
 paru -S starship
 
+# Install fish shell (better than bash and zsh)
+paru -S fish
+
 # stow packages
 
 stow git
