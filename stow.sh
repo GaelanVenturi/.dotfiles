@@ -5,4 +5,4 @@ stow fish
 stow bash
 stow zathura
 stow wezterm
-stow kitty
+# stow kitty

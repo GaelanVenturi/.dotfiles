@@ -27,8 +27,8 @@ paru -S starship
 # Install fish shell (better than bash and zsh)
 paru -S fish
 
-# Oh-My-Fish
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+# Fisher package manager for fish
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
 # stow packages
 
