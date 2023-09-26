@@ -30,6 +30,9 @@ paru -S fish
 # Fisher package manager for fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
+# Anaconda for python setup and management
+paru -S anaconda
+
 # stow packages
 
 stow git
