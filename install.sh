@@ -24,11 +24,14 @@ paru -S gcc nodejs npm
 
 paru -S starship
 
-# Install fish shell (better than bash and zsh)
+# Install fish shell
 paru -S fish
 
 # Fisher package manager for fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+# Install zsh
+paru -S zsh zsh-completions
 
 # Anaconda for python setup and management
 paru -S anaconda
@@ -37,6 +40,7 @@ paru -S anaconda
 
 stow git
 stow nvim
+stow zsh
 stow fish
 stow bash
 stow zathura

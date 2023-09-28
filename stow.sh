@@ -2,6 +2,7 @@
 stow git
 stow nvim
 stow fish
+stow zsh
 stow bash
 stow zathura
 stow wezterm
