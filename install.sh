@@ -20,19 +20,27 @@ rm -rf paru
 
 paru -S gcc nodejs npm
 
-# Install starship
-
+# Install starship prompt for bash
 paru -S starship
 
-# Install fish shell
+# Install fish shell and fisher package manager
 paru -S fish
-
-# Fisher package manager for fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
-# Install zsh
+# Install zsh and oh-my-zsh
+# oh-my-zsh install from https://medium.com/@protiumx/bash-gnu-stow-take-a-walk-while-your-new-macbook-is-being-set-up-351a6f2f9225
 paru -S zsh zsh-completions
 
+install_oh_my_zsh() {
+	if [[ ! -f ~/.zshrc ]]; then
+		info "Installing oh my zsh..."
+		ZSH=~/.oh-my-zsh ZSH_DISABLE_COMPFIX=true sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+		chmod 744 ~/.oh-my-zsh/oh-my-zsh.sh
+		info "Installing powerlevel10k"
+		elsgit clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+		warn "oh-my-zsh already installed"
+	fi
+}
 # Anaconda for python setup and management
 paru -S anaconda
 
