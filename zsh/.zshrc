@@ -70,6 +70,10 @@ zstyle ':omz:update' frequency 1
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  fast-syntax-highlighting
+  zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
