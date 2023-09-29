@@ -6,4 +6,5 @@ stow fish
 stow bash
 stow zathura
 stow wezterm
+stow tmux
 # stow kitty
