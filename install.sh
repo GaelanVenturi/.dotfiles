@@ -34,6 +34,8 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 # oh-my-zsh install from https://medium.com/@protiumx/bash-gnu-stow-take-a-walk-while-your-new-macbook-is-being-set-up-351a6f2f9225
 paru -S zsh zsh-completions
 
+chsh -s /bin/zsh
+
 install_oh_my_zsh() {
 	if [[ ! -f ~/.zshrc ]]; then
 		info "Installing oh my zsh..."
