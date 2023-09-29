@@ -1,6 +1,6 @@
 # Install default packages that are needed for everyday things
 
-sudo pacman -S neovim git wget curl unzip fd ripgrep
+sudo pacman -S git wget curl unzip fd ripgrep
 
 # Install Nerd Fonts Fira Code so things look cool
 
@@ -22,6 +22,9 @@ paru -S gcc nodejs npm
 
 # Install starship prompt for bash
 paru -S starship
+
+# Install neovim nightly from AUR
+paru -S neovim-nightly-bin
 
 # Install fish shell and fisher package manager
 paru -S fish
