@@ -13,8 +13,8 @@ cd
 
 rm -rf paru
 
-# Install compilers
-paru -S gcc nodejs npm
+# Install compilers and languages
+paru -S gcc nodejs npm gcc-fortran r
 
 # GitHub CLI for better use
 paru -S github-cli
