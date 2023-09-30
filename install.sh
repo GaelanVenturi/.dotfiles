@@ -36,16 +36,9 @@ paru -S zsh zsh-completions
 
 chsh -s /bin/zsh
 
-install_oh_my_zsh() {
-	if [[ ! -f ~/.zshrc ]]; then
-		info "Installing oh my zsh..."
-		ZSH=~/.oh-my-zsh ZSH_DISABLE_COMPFIX=true sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-		chmod 744 ~/.oh-my-zsh/oh-my-zsh.sh
-		info "Installing powerlevel10k"
-		elsgit clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-		warn "oh-my-zsh already installed"
-	fi
-}
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Install oh-my-zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
