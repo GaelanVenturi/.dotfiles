@@ -1,3 +1,4 @@
+-- From https://github.com/nvim-neo-tree/neo-tree.nvim/discussions/353
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
