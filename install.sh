@@ -1,13 +1,10 @@
 # Install default packages that are needed for everyday things
-
 sudo pacman -S git wget curl unzip fd ripgrep
 
 # Install Nerd Fonts Fira Code so things look cool
-
 sudo pacman -S ttf-firacode-nerd
 
 # Install paru so that we aren't stuck with pacman and can use the AUR
-
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
@@ -16,9 +13,11 @@ cd
 
 rm -rf paru
 
-# Instal compilers
-
+# Install compilers
 paru -S gcc nodejs npm
+
+# GitHub CLI for better use
+paru -S github-cli
 
 # Install starship prompt for bash
 paru -S starship
@@ -51,14 +50,10 @@ paru -S tmux
 
 # stow packages
 stow git
-
 stow nvim
 stow zsh
+stow bash
 stow fish
-
-stow --adopt --stow bash
-git checkout HEAD
-stow --restow bash
 stow zathura
 stow wezterm
 stow tmux
