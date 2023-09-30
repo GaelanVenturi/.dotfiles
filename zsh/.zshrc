@@ -100,9 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# aliases
 alias ls='ls -alr'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
