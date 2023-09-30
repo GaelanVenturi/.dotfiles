@@ -19,6 +19,9 @@ paru -S gcc nodejs npm gcc-fortran r
 # GitHub CLI for better use
 paru -S github-cli
 
+# Neofetch for flexing
+paru -S neofetch
+
 # Install starship prompt for bash
 paru -S starship
 
@@ -57,5 +60,6 @@ stow fish
 stow zathura
 stow wezterm
 stow tmux
+stow neofetch
 
 # stow kitty

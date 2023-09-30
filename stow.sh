@@ -7,4 +7,5 @@ stow bash
 stow zathura
 stow wezterm
 stow tmux
+stow neofetch
 # stow kitty
