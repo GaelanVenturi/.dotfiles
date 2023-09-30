@@ -31,14 +31,15 @@ paru -S fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
 # Install zsh and oh-my-zsh
-# oh-my-zsh install from https://medium.com/@protiumx/bash-gnu-stow-take-a-walk-while-your-new-macbook-is-being-set-up-351a6f2f9225
 paru -S zsh zsh-completions
 
 chsh -s /bin/zsh
 
+# oh-my-zsh and powerlevel10k
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chmod 744 ~/.oh-my-zsh/oh-my-zsh.sh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 # Install oh-my-zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
@@ -49,12 +50,15 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 paru -S tmux
 
 # stow packages
-
 stow git
+
 stow nvim
 stow zsh
 stow fish
-stow bash
+
+stow --adopt --stow bash
+git checkout HEAD
+stow --restow bash
 stow zathura
 stow wezterm
 stow tmux
