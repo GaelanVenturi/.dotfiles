@@ -14,5 +14,6 @@ I use [stow](https://www.gnu.org/software/stow/) to manage my dotfiles. This pro
 
 - [ ] Add cool ASCII headers to each dotfile 
 - [ ] Make a main install script that runs the install scripts for various programs so things are modular, rather than one big install script. 
+- [ ] Add Rmarkdown to nvim config
 
 
