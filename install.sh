@@ -28,6 +28,9 @@ paru -S starship
 # Install neovim nightly from AUR
 paru -S neovim-nightly-bin
 
+# Install latex things
+paru -S zathura texlive-most
+
 # Install fish shell and fisher package manager
 paru -S fish
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
