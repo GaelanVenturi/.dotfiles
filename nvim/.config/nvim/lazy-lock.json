@@ -53,6 +53,9 @@
   "true-zen.nvim": { "branch": "main", "commit": "2b9e210e0d1a735e1fa85ec22190115dffd963aa" },
   "venv-selector.nvim": { "branch": "main", "commit": "ff3342d4ae8723fab38fed8969b0a1e2c8b6281a" },
   "vim-illuminate": { "branch": "master", "commit": "3bd2ab64b5d63b29e05691e624927e5ebbf0fb86" },
+  "vim-pandoc": { "branch": "master", "commit": "d4fc6f8234c37eef16b6de8055c5fe53b7d7316a" },
+  "vim-pandoc-syntax": { "branch": "master", "commit": "4268535e1d33117a680a91160d845cd3833dfe28" },
+  "vim-rmarkdown": { "branch": "master", "commit": "a1787cb55e45b8778eaed7b392648deb4706cd0b" },
   "vim-startuptime": { "branch": "master", "commit": "454b3de856b7bd298700de33d79774ca9b9e3875" },
   "which-key.nvim": { "branch": "main", "commit": "7ccf476ebe0445a741b64e36c78a682c1c6118b7" }
 }
