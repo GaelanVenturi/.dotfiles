@@ -1,3 +1,12 @@
+#
+# ███████╗███████╗██╗  ██╗██████╗  ██████╗
+# ╚══███╔╝██╔════╝██║  ██║██╔══██╗██╔════╝
+#   ███╔╝ ███████╗███████║██████╔╝██║     
+#  ███╔╝  ╚════██║██╔══██║██╔══██╗██║     
+# ███████╗███████║██║  ██║██║  ██║╚██████╗
+# ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
+#
+#
 # From https://www.tecmint.com/tips-for-tmux-terminal-sessions/#:~:text=To%20configure%20your%20terminal%20to,just%20above%20your%20aliases%20section.&text=Save%20the%20file%20and%20close,you%20open%20a%20terminal%20window.
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 #     tmux attach -t default || tmux new -s default
