@@ -1,14 +1,13 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "ellisonleao/gruvbox.nvim",
     priority = 1000, -- make sure to load this before all the other start plugins
   },
   {
     "LazyVim/LazyVim",
     opts = {
 
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "gruvbox",
     },
   },
 }
