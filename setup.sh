@@ -12,6 +12,11 @@ base=(
 # folders that should, or only need to be installed for a local user
 useronly=(
 	git
+	bin
+)
+
+# .config folder items
+configonly=(
 	nvim
 )
 
@@ -23,6 +28,16 @@ stowit() {
 	# -R recursive
 	# -t target
 	stow -v -R -t ${usr} ${app}
+}
+
+# run the stow command for configuration files in .config
+stowConfig() {
+	usr=$1
+	app=$2
+	target="${usr}/.config/${app}"
+	mkdir -p "${target}/${app}"
+	echo "Stowing ${app} into ${target} for user ${usr}"
+	stow -v -R -t "${target}" "${app}"
 }
 
 echo ""
@@ -37,6 +52,16 @@ done
 for app in ${useronly[@]}; do
 	if [[ ! "$(whoami)" = *"root"* ]]; then
 		stowit "${HOME}" $app
+	fi
+done
+
+# install .config configurations
+echo ""
+echo "Stowing .config specific files"
+
+for app in ${configonly[@]}; do
+	if [[ ! "$(whoami)" = *"root"* ]]; then
+		stowConfig "${HOME}" $app
 	fi
 done
 
