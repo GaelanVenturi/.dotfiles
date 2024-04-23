@@ -4,6 +4,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+eval "$(rbenv init -bash)"
 eval "$(starship init bash)"
 
 alias ls='ls -alr --color=auto'
