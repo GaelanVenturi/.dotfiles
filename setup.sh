@@ -14,6 +14,7 @@ useronly=(
 	git
 	bin
 	wezterm
+	scripts
 )
 
 # .config folder items

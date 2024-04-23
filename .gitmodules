@@ -5,3 +5,7 @@
 [submodule "wallpapers"]
   path = wallpapers 
   url = https://github.com/Gaelanventuri/wallpapers
+
+[submodule "scripts"]
+	path = scripts
+	url = https://github.com/GaelanVenturi/scripts
