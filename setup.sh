@@ -13,6 +13,7 @@ base=(
 useronly=(
 	git
 	bin
+	wezterm
 )
 
 # .config folder items
