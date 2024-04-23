@@ -13,6 +13,7 @@ eval "$(starship init bash)"
 
 export PATH="$HOME/bin/$:$PATH"
 export PATH="$PATH:~/bin"
+export PATH="$PATH:$HOME/scripts"
 
 function gitcmp() {
 	git add .
