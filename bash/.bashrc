@@ -3,9 +3,8 @@
 #
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-eval "$(rbenv init -bash)"
 eval "$(starship init bash)"
+[[ $- != *i* ]] && return
 
 alias ls='ls -alr --color=auto'
 alias grep='grep --color=auto'
@@ -20,3 +19,6 @@ function gitcmp() {
 	git commit -m "$1"
 	git push
 }
+
+# Created by `pipx` on 2024-04-25 18:40:33
+export PATH="$PATH:/home/gventuri/.local/bin"
